@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Whatsapp</title>
+<link rel="icon" href="images/favicon.ico" />
+<link rel="stylesheet" href="css/styles.css" />
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="css/sidebar.css">
+<link rel="stylesheet" type="text/css" href="css/window.css">
+<link rel="stylesheet" type="text/css" href="css/grid.css">
+<link rel="stylesheet" type="text/css" href="css/rightsection.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+
+
+<div class="grid">
+
+<div class="sidebar">
+
+ <div class="sidebar-main">   
+<!-- Sidebar header -->
+<div class="sidebar-header">
+
+<img src="images/amit.jpeg" onclick="OnMainProfileClick()" />
+
+<div class="sidebar-header-icons">
+
+ <img src="images/status.svg" style="display: none;"  /> 
+<img src="images/message-icon.svg" onclick="OnNewContact()"  />
+
+
+
+<div class="dropdown" style="position: relative;">
+<span 
+data-toggle="dropdown" >
+<img src="images/menu-icon.svg" />
+
+</span>
+
+
+
+<div class="dropdown-menu" style="font-size: 17px;
+padding: 17px;position: absolute;
+margin-top: 2.4rem;margin-left: -11rem;
+">
+
+<a   onclick="SetGroupMemPage()"    class="dropdown-item" id="lnk" 
+data-toggle="modal" data-target="#modalUserList">
+New Group
+</a>
+<a onclick="OnMainProfileClick()"  class="dropdown-item" id="lnkNewChat" 
+ data-toggle="modal" data-target="#modalFriendList">
+Profile
+</a>
+<a href="#" id="lnkSignIn"  
+class="dropdown-item">
+Settings
+</a>
+<a href="#" id="lnkSignIn"  
+class="dropdown-item">
+Log Out
+</a>
+
+</div>
+
+</div>
+
+
+
+
+
+</div>
+</div>
+
+
+<!-- Sidebar search chat -->
+<div class="search-chat">
+<div class="search-bar">
+<img src="images/search-icon.svg" />
+<input type="text"
+style="font-size: 17px;"
+placeholder="Search or start new chat" />
+</div>
+</div>
+<!-- Chats -->
+<div class="chats">
+
+
+
+
+<!-- //durgesh -->
+<div class="chat chatside">
+
+<div class="chat-left">
+
+
+<img src="images/dur.png" />
+</div>
+<div class="chat-right">
+<div class="chat-right-top">
+<span class="contact-name">Durgesh Dhrmadikari</span>
+<span class="chat-date">11:20</span>
+</div>
+<div class="chat-right-bottom">
+<div class="chat-right-bottom-left">
+<span class="chat-message-group"
+>hi</span
+>
+</div>
+<div class="chat-right-bottom-right">
+<span class="unread-messages-number">1</span>
+<span class="chat-options">
+<img src="images/down-arrow.svg" />
+</span>
+</div>
+</div>
+</div>
+</div>
+
+<!-- // yash -->
+<div class="chat chatside">
+<div class="chat-left">
+<img src="images/yash.png" />
+</div>
+<div class="chat-right">
+<div class="chat-right-top">
+<span class="contact-name">Yash Sakle</span>
+<span class="chat-date">Yesterday</span>
+</div>
+<div class="chat-right-bottom">
+<div class="chat-right-bottom-left">
+<span class="chat-message">What's going on??? 🖖🖖</span>
+</div>
+<div class="chat-right-bottom-right">
+<span class="chat-options">
+<img src="images/down-arrow.svg" />
+</span>
+</div>
+</div>
+</div>
+
+
+</div>
+
+
+<!--omkesh -->
+ <div class="chat chatside">
+<div class="chat-left">
+<img src="images/om.jpeg" />
+</div>
+<div class="chat-right">
+<div class="chat-right-top">
+<span class="contact-name">Omkesh Munde</span>
+<span class="chat-date">Wednesday</span>
+</div>
+<div class="chat-right-bottom">
+<div class="chat-right-bottom-left">
+<img
+class="double-check-mark"
+src="images/double-check-seen.svg"
+/>
+<span class="chat-message">🤣🤣🤣</span>
+</div>
+<div class="chat-right-bottom-right">
+<span class="chat-options">
+<img src="images/down-arrow.svg" />
+</span>
+</div>
+</div>
+</div>
+</div> 
+<!-- arjun -->
+ <div class="chat chatside">
+<div class="chat-left">
+<img src="images/arj.jpeg" />
+</div>
+<div class="chat-right">
+<div class="chat-right-top">
+<span class="contact-name">Arjun Dode</span>
+<span class="chat-date">Monday</span>
+</div>
+<div class="chat-right-bottom">
+<div class="chat-right-bottom-left">
+<img
+class="double-check-mark"
+src="images/double-check-unseen.svg"
+/>
+<img class="image-icon" src="images/camera-icon.svg" />
+<span class="chat-message">Image</span>
+</div>
+<div class="chat-right-bottom-right">
+<span class="chat-options">
+<img src="images/down-arrow.svg" />
+</span>
+</div>
+</div>
+</div>
+</div>
+<!-- rohit gujar -->
+ <div class="chat chatside">
+<div class="chat-left">
+<img src="images/sonu.png" />
+</div>
+<div class="chat-right">
+<div class="chat-right-top">
+<span class="contact-name">Rohit Gujar</span>
+<span class="chat-date">15/2/2021</span>
+</div>
+<div class="chat-right-bottom">
+<div class="chat-right-bottom-left">
+<img
+class="double-check-mark"
+src="images/double-check-seen.svg"
+/>
+<img
+class="microphone-icon"
+src="images/microphone-seen.svg"
+/>
+<span class="chat-message">1:24</span>
+</div>
+<div class="chat-right-bottom-right">
+<span class="chat-options">
+<img src="images/down-arrow.svg" />
+</span>
+</div>
+</div>
+</div>
+</div> 
+
+
+
+</div>
+
+</div>
+<!--sidebar-main end-->
+
+
+
+
+<div class="sidebar-profile">
+
+<div class="side12">
+
+
+    <span data-testid="back"
+     onclick="SidebarBack()"
+    data-icon="back" class="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25">
+        <path fill="white" d="M12 4l1.4 1.4L7.8 11H20v2H7.8l5.6 5.6L12 20l-8-8 8-8z"></path></svg></span>
+<span style="font-size: 22px;color: white;
+padding: 10px;padding-top: 10px;padding-left: 20px;
+">Profile</span>
+
+
+
+</div>
+
+<div class="side-profile-scroll">
+<div class="side11">
+
+    <!-- <img src="images/amit.jpeg"> -->
+
+
+<div class="image-wrapper">
+
+<input type="file"
+
+class="profile_img_upload">
+<span >change profile </span>
+</div>
+    
+
+
+</div>
+
+<div class="side13" >
+
+<div style="margin-left: 20px;">
+    <span style="font-size: 15px;
+    color: #009688;
+    "> Your Name </span>
+</div>
+
+<div style="display: flex;
+   justify-content: space-around;
+   padding: 10px;
+">
+
+<div style="padding-left: 10px;
+  margin: 0px;
+  flex-grow: 2;
+  font-size: 19px;color: #919191;
+">
+<span>Amit Patil</span>
+</div>
+
+<div style="align-self: flex-end;
+width:40px;">
+<span data-testid="pencil" 
+data-icon="pencil" class="">
+<svg xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    width="24" 
+    height="24">
+    <path fill="#919191"
+    d="M3.95 16.7v3.4h3.4l9.8-9.9-3.4-3.4-9.8 9.9zm15.8-9.1c.4-.4.4-.9 0-1.3l-2.1-2.1c-.4-.4-.9-.4-1.3 0l-1.6 1.6 3.4 3.4 1.6-1.6z">
+</path>
+</svg>
+</span> 
+
+</div>
+
+</div>
+
+</div>
+
+
+ <div class="side14" style="padding: 20px;">
+
+    <span  style="    font-weight: 400;
+    font-size:14px;color: rgb(0 0 0 / 45%);
+    ">
+        This is not your username or pin. 
+        This name will be visible to your WhatsApp contacts.
+    </span>
+
+ </div>
+
+ <div class="side13" style="height: auto;
+ background: white;
+ ">
+
+    <div style="margin-left: 20px;">
+        <span style="font-size: 15px;
+        color: #009688;
+        "> About </span>
+    </div>
+    
+    <div style="display: flex;
+       justify-content: space-around;
+       padding: 10px;position: relative;
+    ">
+    
+    <div style="padding-left: 10px;
+      margin: 0px;
+      flex-grow: 2;
+      font-size: 17px;color: #919191;
+    
+    ">
+    <span>Hey there! I am using WhatsApp</span>
+    </div>
+    
+    <div style=" left: 90% ;top:-15% ; position: absolute ;align-self: flex-end;
+    width:40px;">
+    <span data-testid="pencil" 
+    data-icon="pencil" class="">
+    <svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        width="24" 
+        height="24">
+        <path fill="#919191"
+        d="M3.95 16.7v3.4h3.4l9.8-9.9-3.4-3.4-9.8 9.9zm15.8-9.1c.4-.4.4-.9 0-1.3l-2.1-2.1c-.4-.4-.9-.4-1.3 0l-1.6 1.6 3.4 3.4 1.6-1.6z">
+    </path>
+    </svg>
+    </span> 
+    
+    </div>
+    
+    </div>
+    
+</div>
+
+</div>
+
+
+</div>
+<!--sidebar-profile end-->
+
+
+ <div class="sidebar_contact">
+
+<div class="side22">
+
+
+<span data-testid="back"
+    onclick="SidebarBack()"
+data-icon="back" class="">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25">
+    <path fill="white" d="M12 4l1.4 1.4L7.8 11H20v2H7.8l5.6 5.6L12 20l-8-8 8-8z"></path></svg></span>
+<span style="font-size: 22px;color: white;
+padding: 10px;padding-top: 10px;padding-left: 20px;
+">New Chat</span>
+
+
+
+</div>
+
+<div class="search-chat">
+<div class="search-bar">
+<img src="images/search-icon.svg" />
+<input id="contactserach_chat" type="text" style="font-size: 15px;"
+placeholder="Search..." />
+</div>
+</div>
+
+<div class="chats_contact" style="
+/* height: 70vh;overflow-y: scroll; */
+
+">
+
+
+
+<!-- Ragnor -->
+<div class="chat chatside" style="background: none;" >
+    
+    <div class="chat-left">
+    <img src="images/ragnor.jpg" />
+
+ 
+
+    </div>
+    <div class="chat-right" style="border: none;">
+    <div class="chat-right-top" >
+    <span class="contact-name" style="padding-top: 10px;">
+    New Group</span>
+   
+    </div>
+   
+    </div>
+    </div>
+    
+    <hr>
+
+    <div style="width: 100%;height: 10vh;
+
+    color:#009688;
+    font-size: 18px;padding: 20px;
+    padding-left: 30px;
+    ">
+   <p style="font-size: 17px;">FREQUENTLY CONTACTED</p>
+    </div>
+    
+
+    <div class="chat chatside">
+        <div class="chat-left">
+        <img src="images/om.jpeg" />
+        </div>
+        <div class="chat-right">
+        <div class="chat-right-top">
+        <span class="contact-name">Omkesh Munde</span>
+    
+        </div>
+        <div class="chat-right-bottom">
+        <div class="chat-right-bottom-left">
+        <span class="chat-message">4878586238647
+            </span>
+        </div>
+        <div class="chat-right-bottom-right">
+     
+        </div>
+        </div>
+        </div>
+        
+        
+        </div>
+        
+
+    <div class="chat chatside">
+        <div class="chat-left">
+        <img src="images/dur.png" />
+        </div>
+        <div class="chat-right">
+        <div class="chat-right-top">
+        <span class="contact-name">Durgesh Dhrmadikari</span>
+     
+        </div>
+        <div class="chat-right-bottom">
+        <div class="chat-right-bottom-left">
+        
+         <span class="chat-message">448566147546</span>
+        </div>
+        <div class="chat-right-bottom-right">
+    
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+<div class="chat chatside" >
+    
+    <div class="chat-left">
+    <img src="images/yash.png" />
+    </div>
+    <div class="chat-right">
+    <div class="chat-right-top">
+    <span class="contact-name">
+   Yash Sakle</span>
+   
+    </div>
+    <div class="chat-right-bottom">
+    <div class="chat-right-bottom-left">
+        <span class="chat-message-group"
+        >94738268927</span
+        >
+
+    </div>
+    <div class="chat-right-bottom-right">
+  
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+    <div class="chat chatside">
+    
+    <div class="chat-left">
+    
+    
+    <img src="images/sonu.png" />
+    </div>
+    <div class="chat-right">
+    <div class="chat-right-top">
+    <span class="contact-name">Rohit Gujar</span>
+
+    </div>
+    <div class="chat-right-bottom">
+    <div class="chat-right-bottom-left">
+    <span class="chat-message-group"
+    >9969477245</span
+    >
+    </div>
+    <div class="chat-right-bottom-right">
+
+    </div>
+    </div>
+    </div>
+    </div>
+    
+
+    
+
+     <div class="chat chatside">
+    <div class="chat-left">
+    <img src="images/arj.jpeg" />
+    </div>
+    <div class="chat-right">
+    <div class="chat-right-top">
+    <span class="contact-name">Arjun Dode</span>
+
+    </div>
+    <div class="chat-right-bottom">
+    <div class="chat-right-bottom-left">
+   
+    <span class="chat-message">8888565312</span>
+    </div>
+    <div class="chat-right-bottom-right">
+   
+    </div>
+    </div>
+    </div>
+    </div> 
+
+
+
+
+
+</span>
+
+</div> 
+</div>
+
+<!--sidebar-contact end-->
+
+<div class="sidebar-group-name-set"style="background:#dddbd1;" >
+
+    <div class="side12">
+    
+    
+        <span data-testid="back"
+         onclick="BackToAddGroupMemPage()"
+        data-icon="back" class="">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25">
+            <path fill="white" d="M12 4l1.4 1.4L7.8 11H20v2H7.8l5.6 5.6L12 20l-8-8 8-8z"></path></svg></span>
+    <span style="font-size: 18px;color: white;
+    padding: 10px;padding-top: 10px;padding-left: 20px;
+    ">New Group</span>
+    
+    
+    
+    </div>
+    
+   
+    <div class="side11" style="background:#dddbd1;">
+    
+        <!-- <img src="images/face2.jpg">
+     -->
+    
+    <div class="image-wrapper" 
+    style="background:url('images/w1p.png') ;
+     background-size: 100% 100%;
+    ">
+    
+    <input type="file"    
+    class="profile_img_upload" style="
+    background: rgba(109, 106, 106, 0.9)
+    ;display: block;
+    padding:30% 40% ;
+padding-bottom: 48%;
+    
+    ">
+    <span style="display: block;">change profile </span>
+    </div>
+        
+    
+    
+    </div>
+    
+    <div class="side13" style="background: none;">
+    
+    <div style="margin-left: 20px;">
+        <span style="font-size: 15px;
+        color: #4a4a4a;
+        ">Group Subject </span>
+    </div>
+    
+    <div style="display: flex;
+       justify-content: space-around;
+       padding: 10px;border-bottom: 2px solid #00bfa5;
+       margin-left: 20px;
+    ">
+    
+    <div style="padding-left: 10px;
+      margin: 0px;
+      flex-grow: 2;
+      font-size: 19px;color: #919191;
+      padding-bottom: 0px;
+    ">
+
+    <input type="text" class="groupnamesetinput" 
+    style="
+    background: none;
+    border: none;
+    outline: none;
+    color: #919191;
+        padding-bottom: 0px;
+    ">
+
+    </div>
+    <div style="align-self: flex-end;
+    width:40px;font-size: 15px;">
+       25
+    </div>
+    <div style="align-self: flex-end;
+    width:40px;">
+    <span data-testid="pencil" 
+    data-icon="pencil" class="">
+    <svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        width="24" 
+        height="24">
+        <path fill="#919191"
+        d="M3.95 16.7v3.4h3.4l9.8-9.9-3.4-3.4-9.8 9.9zm15.8-9.1c.4-.4.4-.9 0-1.3l-2.1-2.1c-.4-.4-.9-.4-1.3 0l-1.6 1.6 3.4 3.4 1.6-1.6z">
+    </path>
+    </svg>
+    </span> 
+    
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    
+     <div class="side141" style="padding: 60px 100px 20px 45% ;
+
+     ">
+    
+     <span class="groupnamesubmitbtn"  style="    font-weight: 400;
+        font-size:14px;color: rgb(0 0 0 / 45%);
+        ">
+    
+    <div style="
+    background: #09e85e;
+    padding: 10px;
+
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    position: relative;
+    "
+    
+    >
+     <span data-testid="checkmark-medium" 
+     data-icon="checkmark-medium"  
+     style="position: absolute;left:21%;top:25%"
+     class="">
+     <svg xmlns="http://www.w3.org/2000/svg" 
+     viewBox="0 0 24 24"
+      width="24" height="24">
+      <path fill="#fff" d="M8 17.1l-5.2-5.2-1.7 1.7 6.9 7L22.9 5.7 21.2 4 8 17.1z"></path></svg></span>
+    </div>
+
+        </span>
+    
+     </div>
+   
+    
+    </div>
+<!-- sidebar-group-name-set end-->
+
+
+<div class="sidebar-add-group-member" 
+
+style="position: relative;">
+
+
+
+<div class="side22">
+
+
+<span data-testid="back"
+onclick="SidebarBack()"
+data-icon="back" class="">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25">
+<path fill="white" d="M12 4l1.4 1.4L7.8 11H20v2H7.8l5.6 5.6L12 20l-8-8 8-8z"></path></svg></span>
+<span style="font-size: 22px;color: white;
+padding: 10px;padding-top: 10px;padding-left: 20px;
+">Add Members</span>
+
+
+
+</div>
+
+
+
+
+<span style="display: flex;flex-direction: column;">
+
+<div class="side132member">
+<div class="con-select-mem" >
+
+ <!-- <span >
+<div class="groupmemberselction" 
+style="display: inline;font-size: 15px;
+color: #4a4a4a;background: #e6e6e6;
+padding: 8px;border-radius:18px;
+padding-bottom: 10px;
+">
+<div style="display: inline;">
+<img  src="images/face1.jpg"
+style="width: 30px;height: 30px;
+border-radius: 50%;
+"/>
+</div>
+<div style="display: inline;margin-left: 10px;">Amit Patil Gujat</div>
+<div style="margin-right: 10px;display: inline;margin-left: 10px;">x</div>
+</div>
+</span>
+ -->
+
+
+</div>
+</div>
+ <!--side132member end-->
+
+
+<!-- search bar -->
+<span style="padding: 10px;padding-right: 30px;
+padding-top: 0px;
+padding-bottom: 5px;">
+<div style="display: flex;
+justify-content: space-around;
+padding: 10px;border-bottom: 2px solid #00bfa5;
+margin-left: 20px;
+">
+
+<div style="padding-left: 10px;
+margin: 0px;
+flex-grow: 2;
+font-size: 19px;color: #919191;
+padding-bottom: 0px;
+">
+
+<input type="text" placeholder="Search..." class="groupnamesetinput" 
+style="
+background: none;
+border: none;
+outline: none;
+color: #919191;
+padding-bottom: 0px;
+">
+
+</div>
+
+
+</div>
+</span>
+
+
+<div class="chatblock" style="flex-grow:2;-ms-flex-align: end; ">
+
+
+<div class="chat groupside" data-id="11">
+    <div class="chat-left">
+    <img src="images/om.jpeg" />
+    </div>
+    <div class="chat-right">
+    <div class="chat-right-top">
+    <span class="contact-name">Omkesh Munde</span>
+
+    </div>
+    <div class="chat-right-bottom">
+    <div class="chat-right-bottom-left">
+    <span class="chat-message">
+        8842468794</span>
+    </div>
+    <div class="chat-right-bottom-right">
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    </div>
+    
+
+
+<div class="chat groupside" data-id="12">
+    <div class="chat-left">
+    <img src="images/arj.jpeg" />
+    </div>
+    <div class="chat-right">
+    <div class="chat-right-top">
+    <span class="contact-name">Arjun Dode</span>
+    
+    </div>
+    <div class="chat-right-bottom">
+    <div class="chat-right-bottom-left">
+    
+        <span class="chat-message">94747292644</span>
+    </div>
+    <div class="chat-right-bottom-right">
+
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+<div class="chat groupside"data-id="13" >
+
+<div class="chat-left">
+<img src="images/dur.png" />
+</div>
+<div class="chat-right">
+<div class="chat-right-top">
+<span class="contact-name">
+Durgesh Dhrmadikari</span>
+
+</div>
+<div class="chat-right-bottom">
+<div class="chat-right-bottom-left">
+    <span class="chat-message-group"
+    >9945673577</span
+    >
+
+</div>
+<div class="chat-right-bottom-right">
+
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="chat groupside" data-id="14">
+    <div class="chat-left">
+    <img src="images/sonu.png" />
+    </div>
+    <div class="chat-right">
+    <div class="chat-right-top">
+    <span class="contact-name">Rohit Gujar</span>
+    
+    </div>
+    <div class="chat-right-bottom">
+    <div class="chat-right-bottom-left">
+    
+        <span class="chat-message">884636777227</span>
+    </div>
+    <div class="chat-right-bottom-right">
+
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+<div class="chat groupside" data-id="15">
+
+<div class="chat-left">
+<img src="images/yash.png" />
+</div>
+<div class="chat-right">
+<div class="chat-right-top">
+<span class="contact-name">
+Yash Sakle  </span>
+
+</div>
+<div class="chat-right-bottom">
+<div class="chat-right-bottom-left">
+    <span class="chat-message-group"
+    >8994786747</span
+    >
+
+</div>
+<div class="chat-right-bottom-right">
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+<!-- bbttom-->
+
+</span>
+
+<div class="side1412" 
+style="padding: 30px 100px 20px 45% ;
+background: #dddbd1;position: absolute;
+bottom: 0;margin: 0px;width: 100%;
+
+">
+
+<span class="groupmembtn" 
+style=" font-weight: 400;
+font-size:14px;
+color: rgb(0 0 0 / 45%);
+">
+
+<div style="
+background: #09e85e;
+padding: 10px;
+
+width:50px;
+height:50px;
+border-radius: 50%;
+position: relative;
+"
+onclick="SetGroupNamepage()"
+>
+<span data-testid="arrow-forward" 
+data-icon="arrow-forward" 
+class="">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30">
+<path fill="#fff" d="M15 7l-1.4 1.4 5.6 5.6H7v2h12.2l-5.6 5.6L15 23l8-8-8-8z">
+
+</path>
+</svg>
+</span>
+
+
+</div>
+
+</span>
+
+</div>
+
+
+
+</div>
+<!--sidebar-add group  member end-->
+
+
+
+
+</div>
+<!--  sidebar end-->
+
+
+
+
+<div class="main">
+<!-- Main chat window header -->
+<div class="chat-window-header">
+<div class="chat-window-header-left">
+<img          onclick="OnProfile()"
+class="chat-window-contact-image"
+src="images/timmy-m-harley.jpg"
+/>
+<div class="contact-name-and-status-container">
+<span 
+onclick="OnProfile()"
+class="chat-window-contact-name">Amit Patil</span>
+<span class="chat-window-contact-status">Online</span>
+</div>
+</div>
+<div class="chat-window-header-right">
+<img
+class="chat-window-search-icon"
+src="images/search-icon.svg" style="display: none;"
+/>
+<img class="chat-window-menu-icon" src="images/menu-icon.svg" />
+</div>
+</div>
+
+<!-- Chat window -->
+<div class="chat-window">
+
+
+ <div class="sender">
+<span class="sender-message-tail"
+><img src="./images/message-tail-sender.svg"
+/></span>
+<span class="sender-message">Hi</span>
+<span class="message-time">7:32 pm</span>
+<span class="message-status"
+><img src="./images/double-check-seen.svg"
+/></span>
+</div> 
+ <div class="receiver">
+<span class="receiver-message-tail"
+><img src="./images/message-tail-receiver.svg"
+/></span>
+</div>
+
+<div class="receiver">
+    <span class="receiver-message-tail"
+    ><img src="./images/message-tail-receiver.svg"
+    /></span>
+    <span class="receiver-message">hello.</span>
+    <span class="message-time">7:36 pm</span>
+    </div>
+
+<div class="sender">
+    <span class="sender-message-tail"
+    ><img src="images/message-tail-sender.svg"
+    /></span>
+    <span class="sender-message">How was the day ?.</span>
+    <span class="message-time">7:40 pm</span>
+    <span class="message-status"
+    ><img src="./images/double-check-seen.svg"
+    /></span>
+    </div>
+    <div class="receiver">
+        <span class="receiver-message-tail"
+        ><img src="./images/message-tail-receiver.svg"
+        /></span>
+        <span class="receiver-message">good.</span>
+        <span class="message-time">7:36 pm</span>
+        </div>
+      
+
+
+
+
+
+
+
+<div class="receiver image-message">
+<span class="receiver-message"
+><img src="./images/sonu.png"
+/></span>
+<span class="message-time">7:38 pm</span>
+</div>
+<br>
+
+<div class="receiver">
+    <span class="receiver-message-tail"
+    ><img src="./images/message-tail-receiver.svg"
+    /></span>
+    <span class="receiver-message">who is he ?.</span>
+    <span class="message-time">7:36 pm</span>
+    </div>
+
+<div class="sender">
+<span class="sender-message-tail"
+><img src="images/message-tail-sender.svg"
+/></span>
+<span class="sender-message">My brother.</span>
+<span class="message-time">7:40 pm</span>
+<span class="message-status"
+><img src="./images/double-check-seen.svg"
+/></span>
+</div>
+
+
+<div class="type-message-bar" style="">
+<div class="type-message-bar-left">
+<img src="images/icons.svg" />
+<img src="images/attach-icon.svg" />
+</div>
+<div class="type-message-bar-center">
+<input type="text" placeholder="Type a message" />
+</div>
+<div class="type-message-bar-right">
+<img src="images/audio-icon.svg" />
+</div>
+</div>
+
+
+</div>
+
+
+
+
+
+</div>
+<!--main end-->
+
+<div class="rightsection"    >
+
+<!--main pro wwindo start-->
+<div class="main-pro-windo">
+
+    <div class="main-pro-sec1">
+        
+        <span 
+                data-testid="x" 
+            data-icon="x" 
+            class=""
+            onclick="onchatUser()"
+            >
+        <svg xmlns="http://www.w3.org/2000/svg" 
+        viewBox="0 0 24 24" 
+        width="24" 
+        height="24">
+            <path fill="#989494
+            " d="M19.1 17.2l-5.3-5.3 5.3-5.3-1.8-1.8-5.3 5.4-5.3-5.3-1.8 1.7 5.3 5.3-5.3 5.3L6.7 19l5.3-5.3 5.3 5.3 1.8-1.8z">
+    
+            </path>
+        </svg>
+        </span>
+        <h1>Contact Info</h1>
+    
+    </div>
+    
+    <div class="main-pro-sec2">
+
+    
+    <div class="sec2-div1" >
+    
+    <div>
+    <img src="images/amit.jpeg"  >
+    </div>
+    <div>
+    <span class="mpw-pname">Omkesh Munde</span>
+    
+    
+    </div>
+    
+    </div>
+    
+    <div class="sec2-div2 ">
+    
+    <div class="col-12" style="margin-left:10px;
+    display: flex;justify-content: space-between;
+    ">
+    
+    <span style="color: #009688;
+        font-size: 17px;
+    ">Media</span>
+    <p style="float: right;
+    margin-right:40px;" >
+    <span onclick="ShowMedia()" data-testid="chevron-right-alt"
+    data-icon="chevron-right-alt" 
+    class="_2KrN8">
+    <svg xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 10 21"
+    width="10" 
+    height="21">
+    <path fill="#989494" 
+        d="M1 15.75l5.2-5.2L1 5.35l1.5-1.5 6.5 6.7-6.6 6.6-1.4-1.4z">
+    </path></svg></span>
+    
+    </p>
+    
+    
+    </div>   
+    <div class="col-12 row " >
+    
+    <div class="col-4" style="">
+        <img src="images/amit.jpeg" 
+        style="width: 9.5rem;">
+    
+    </div>
+    <div class="col-4"    >
+        <img src="images/ragnor.jpg" 
+        style="width: 9.5rem;">
+    </div>
+    <div class="col-4"style="">
+        <img src="images/om.jpeg" 
+        style="width: 9.5rem;">
+    </div>
+    
+    </div>  
+    
+    </div>
+    
+    <div class="sec2-div3">
+    
+    <div class="sp1">
+        <span style="color: #009688;
+        font-size: 18px;">About and phone number</span>
+    </div>
+    <div class="sp2" 
+    style="padding: 10px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    ">
+        
+        <p style="color: #989494;
+        font-size: 17px;">
+        Hey there! I am using WhatsApp.
+    </p>
+    
+    </div>
+    
+    <hr style="width: 90%;">
+    
+    <div class="sp3">
+    
+    <p style="color: #212529;
+    font-size: 17px;">
+    +91 76205 58010
+    </p>
+    
+    </div>
+    
+    </div> 
+    
+    <div class="sec2-div4">
+    
+    <div style="padding:10px;
+    padding-top: 12px;    padding-left: 20px;
+    ">
+        <span>  
+        <span 
+        data-testid="settings-blocked"
+            data-icon="settings-blocked"
+            class="">
+            <svg xmlns="http://www.w3.org/2000/svg" 
+            viewBox="0 0 24 24"
+            width="24"
+            height="24">
+            <path fill="#df3333" 
+            d="M12 2.8c-5.3 0-9.7 4.3-9.7 9.7s4.3 9.7 9.7 9.7 9.7-4.3 9.7-9.7-4.4-9.7-9.7-9.7zm-7.3 9.7c0-4 3.3-7.3 7.3-7.3 1.6 0 3.1.5 4.3 1.4L6.1 16.8c-.9-1.2-1.4-2.7-1.4-4.3zm7.3 7.3c-1.6 0-3-.5-4.2-1.4L17.9 8.3c.9 1.2 1.4 2.6 1.4 4.2 0 4-3.3 7.3-7.3 7.3z">
+    
+        </path>
+    </svg>
+    </span>
+    
+        </span> 
+    
+    
+    </div>
+    <div style="padding:10px;padding-top: 12px;"> 
+    <span style="font-size: 18px;">
+        Block
+    </span> 
+    </div>
+    
+    </div>
+    
+    <div class="sec2-div5">
+    
+    <div style="padding:10px;
+    padding-top: 12px;
+    padding-left: 20px;
+    ">
+        <span 
+        data-testid="delete" 
+        data-icon="delete" 
+        class="">
+        <svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" 
+        width="24"
+        height="24">
+        <path fill="#df3333"
+            d="M6 18c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V6H6v12zM19 3h-3.5l-1-1h-5l-1 1H5v2h14V3z">
+    
+        </path>
+    </svg>
+    </span>
+        
+        </div>
+    <div style="padding:10px;padding-top: 12px;"> 
+        <span style="font-size: 18px;">
+            Delete Chat
+        </span> 
+    </div>
+    
+    
+    </div>
+    <!-- 
+    <div class="sec2-div6">
+    
+    </div>
+    <div class="sec2-div7">
+    
+    </div> -->
+    
+    </div>
+    <!--main pro-sec2 end-->
+    
+</div>
+<!--main pro wwindo end-->
+
+<div class="main-gallery-windo">
+
+<div class="main-gallery-sec1">
+
+<div>
+<span
+ onclick="OnProfile()"
+data-testid="back" 
+data-icon="back" 
+class="">
+<svg xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 24 24"
+width="24" 
+height="24">
+<path fill="#fff"
+d="M12 4l1.4 1.4L7.8 11H20v2H7.8l5.6 5.6L12 20l-8-8 8-8z"></path></svg></span>
+
+</div>
+
+<div style="margin-top: 10px;">
+<ul class="nav ">
+<li class="nav-item ">
+<a class="nav-link active" 
+data-toggle="pill" 
+href="#home">MEDIA</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+data-toggle="pill"
+href="#menu2">LINKS</a>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div class="main-gallery-sec2">
+
+<div class="tab-content">
+
+<div class="tab-pane container active"
+id="home">
+
+<div class="outer">
+
+
+<div class="div11" id="ass-1">
+
+    <img src="images/ragnor.jpg"
+     style="width: 110px;
+     height: 110px;
+     ">
+
+</div> 
+
+<div class="div11" id="ass-1">
+
+    <img src="images/amit.jpeg"
+     style="width: 110px;
+     height: 110px;
+     ">
+
+</div> 
+
+<div class="div11" id="ass-1">
+
+    <img src="images/om.jpeg"
+     style="width: 110px;
+     height: 110px;
+     ">
+
+</div> 
+
+
+<div class="div11" id="ass-1">
+
+    <img src="images/sonu.png"
+     style="width: 110px;
+     height: 110px;
+     ">
+
+</div> 
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+<div
+class="tab-pane container fade"
+id="menu1">
+7777...
+</div>
+
+<div
+class="tab-pane container  " 
+id="menu2"
+>
+
+<div class="linkgrid">
+
+    
+
+    <div class="box "
+ style="width: 100%;height:auto;
+  background: white;display: flex;
+  flex-direction: column; 
+    border-radius:12px 12px 37px 14px;
+">
+<div style="padding: 10px;
+padding-top: 5px;
+font-size: 18px;
+color: skyblue;">
+ <span>Amit Patil</span>
+ </div>
+<div style="width: 100%;padding: 0px;
+padding-left: 10px;">
+    <iframe  src="https://www.youtube.com/embed/A6XUVjK9W4o" frameborder="0" allowfullscreen></iframe>
+
+</div>
+<div style="padding: 10px;
+padding-top: 5px;
+font-size: 15px;
+color: skyblue;overflow-x: hidden;
+width:80%;
+"> 
+<a target="_" href="https://www.youtube.com/embed/A6XUVjK9W4o">
+    https://www.youtube.com/embed/A6XUVjK9W4o
+</a> </div>
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+</div>
+<!--  sid amit end-->
+
+
+</div>
+<!--  grid end-->
+<!--start msg starr-->
+<div class="startmsg" style="position: relative;">
+
+
+    <div class="innerdiv1">
+    
+    <img src="images/start.jpg">
+    
+    </div>
+    <!--inner div1 end-->
+    
+    <div class="innerdiv2">
+    
+    <h1 >
+    Keep your phone connected
+    </h1><br>
+    <p>
+    WhatsApp connects to your phone to sync messages.
+    To reduce data usage, connect your
+    phone to Wi-Fi\
+    .</p>
+    
+    
+    </div>
+    <!--inner div2 end-->
+    <div style="
+    bottom: 0;width: 100%;height: 1vh;
+    background: #19c16b;position: absolute;">
+    
+    </div>
+    
+    </div>
+    <!--start msg end-->
+    
+<script src="js/chatclient.js">
+</script> 
+<script src="js/group.js">
+</script>
+</body>
+</html>
