@@ -1,10 +1,19 @@
 # Whatsapp Web clone 
 
 -I had developed a WhatsApp web clone using HTML, CSS, javascript, bootstrap 4, and jquery.
+<br>
 
-<br><br>
+>Demo Link
+
+
+
+[Whatsapp web clone](http://codewithamit.epizy.com/whatsapp-web/)
+
+
+<br>
 
 >Screen shots
+<br>
 
 ![Screenshot from 2021-06-04 23-01-05](https://user-images.githubusercontent.com/62344675/120841491-2fea2e80-c589-11eb-81a2-c0e42ab21c78.png)
 <br><br>
